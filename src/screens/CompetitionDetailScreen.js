@@ -18,7 +18,7 @@ export default function CompetitionDetailScreen({ route, navigation }) {
                 <Text style={styles.text}>{description}</Text>
 
                 <Text style={styles.subTitle}>Quick Facts:</Text>
-                {facts.map((fact, index) => (
+                {facts?.map((fact, index) => (
                     <Text key={index} style={styles.text}>• {fact}</Text>
                 ))}
             </ScrollView>
