@@ -63,16 +63,16 @@ export default function GoalScreen({route, navigation}) {
 
           <View style={styles.messageBox}>
             <Text style={styles.message}>Good job, my son! Keep going.</Text>
-            <Image
-              source={require('../assets/img/03342e56d0b2bdb558b787fc00c60b30e6b59931.png')}
-              style={{
-                width: 100,
-                height: 100,
-                position: 'absolute',
-                bottom: -100,
-                right: 0,
-              }}
-            />
+            {/*<Image*/}
+            {/*  source={require('../assets/img/03342e56d0b2bdb558b787fc00c60b30e6b59931.png')}*/}
+            {/*  style={{*/}
+            {/*    width: 100,*/}
+            {/*    height: 100,*/}
+            {/*    position: 'absolute',*/}
+            {/*    bottom: -100,*/}
+            {/*    right: 0,*/}
+            {/*  }}*/}
+            {/*/>*/}
           </View>
         </ScrollView>
       </ImageBackground>

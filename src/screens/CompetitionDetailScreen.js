@@ -14,13 +14,16 @@ export default function CompetitionDetailScreen({ route, navigation }) {
                 <Image source={image} style={styles.image} />
                 <Text style={styles.title}>{title}</Text>
 
-                <Text style={styles.subTitle}>Description:</Text>
-                <Text style={styles.text}>{description}</Text>
+                <View style={styles.card}>
+                    <Text style={styles.subTitle}>Description:</Text>
+                    <Text style={styles.text}>{description}</Text>
 
-                <Text style={styles.subTitle}>Quick Facts:</Text>
-                {facts?.map((fact, index) => (
-                    <Text key={index} style={styles.text}>• {fact}</Text>
-                ))}
+                    <Text style={styles.subTitle}>Quick Facts:</Text>
+                    {facts?.map((fact, index) => (
+                        <Text key={index} style={styles.text}>• {fact}</Text>
+                    ))}
+                </View>
+
             </ScrollView>
         </ImageBackground>
     );
@@ -35,6 +38,13 @@ const styles = StyleSheet.create({
         padding: 20,
         paddingTop: 80,
     },
+    card: {
+        backgroundColor: 'rgba(0, 0, 0, 0.5)', // полупрозрачный тёмный фон
+        padding: 15,
+        borderRadius: 15,
+        marginTop: 10,
+    },
+
     sectionTitle: {
         color: '#FFA500',
         fontSize: 22,

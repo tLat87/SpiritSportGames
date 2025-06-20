@@ -9,7 +9,7 @@ export default function QuizStartScreen({ navigation }) {
         >
         <View style={styles.container}>
             <Text style={styles.title}>QUIZ</Text>
-            <Text style={styles.subtitle}>How well do you know Olympus?</Text>
+            <Text style={styles.subtitle}>How well do you know old times?</Text>
             <Image
                 source={require('../assets/img/b163630883bf3bc659416a44b4d5d938be49f334.png')}
                 style={styles.image}

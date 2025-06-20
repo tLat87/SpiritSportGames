@@ -26,15 +26,15 @@ export default function SettingsScreen({ navigation }) {
             <ScrollView style={styles.container}>
                 <Text style={styles.header}>NOTES</Text>
 
-                <View style={styles.button}>
-                    <Text style={styles.buttonText}>Prompts from Zeus</Text>
-                    <Switch
-                        value={isZeusPromptsEnabled}
-                        onValueChange={() => dispatch(toggleZeus())}
-                        trackColor={{ false: '#767577', true: '#81b0ff' }}
-                        thumbColor={isZeusPromptsEnabled ? '#f5dd4b' : '#f4f3f4'}
-                    />
-                </View>
+                {/*<View style={styles.button}>*/}
+                {/*    <Text style={styles.buttonText}>Prompts from Zeus</Text>*/}
+                {/*    <Switch*/}
+                {/*        value={isZeusPromptsEnabled}*/}
+                {/*        onValueChange={() => dispatch(toggleZeus())}*/}
+                {/*        trackColor={{ false: '#767577', true: '#81b0ff' }}*/}
+                {/*        thumbColor={isZeusPromptsEnabled ? '#f5dd4b' : '#f4f3f4'}*/}
+                {/*    />*/}
+                {/*</View>*/}
 
                 <TouchableOpacity
                     style={styles.button}

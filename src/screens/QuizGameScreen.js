@@ -86,8 +86,11 @@ export default function QuizGameScreen({ navigation }) {
             style={styles.background}
         >
             <View style={styles.container}>
-                <Text style={styles.counter}>{current + 1}/{questions.length}</Text>
-                <Text style={styles.question}>{currentQ.question}</Text>
+                <View style={styles.card}>
+                    <Text style={styles.counter}>{current + 1}/{questions.length}</Text>
+                    <Text style={styles.question}>{currentQ.question}</Text>
+                </View>
+
                 {currentQ.options.map((option, index) => (
                     <TouchableOpacity
                         key={index}
@@ -112,6 +115,12 @@ const styles = StyleSheet.create({
     background: {
         flex: 1,
         resizeMode: 'cover',
+    },
+    card: {
+        backgroundColor: 'rgba(0, 0, 0, 0.5)', // полупрозрачный тёмный фон
+        padding: 15,
+        borderRadius: 15,
+        marginTop: 10,
     },
     container: {
         paddingTop: 80,

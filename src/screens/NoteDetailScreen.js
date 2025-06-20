@@ -53,7 +53,7 @@ export default function NoteDetailScreen({ route, navigation }) {
                 <Text style={styles.sectionTitle}>Personal Goal & Motivation</Text>
                 <Text style={styles.sectionContent}>{note?.goal}</Text>
                 <Text style={styles.awardLabel}>Award from Zeus</Text>
-                <View style={{backgroundColor: '#42718a',
+                <View style={{backgroundColor: 'rgba(0, 0, 0, 0.5)',
                     padding: 22,
                     borderRadius: 32,
                     alignItems: 'center',
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
 
     },    header: { color: 'orange', fontSize: 32, textAlign: 'center', marginVertical: 10, fontWeight: 'bold' },
     titleBadge: {
-        backgroundColor: '#42718a',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
         padding: 22,
         width: '100%',
         alignItems: 'center',
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     title: { color: 'white', fontSize: 18, fontWeight: 'bold' },
     sectionTitle: { color: '#fff', fontSize:22,fontWeight: '700', marginTop: 20, marginBottom: 6 },
     sectionContent: {
-        backgroundColor: '#42718a',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
         color: '#fff',
         fontSize: 20,
         fontWeight: 'bold',
